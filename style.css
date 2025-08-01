@@ -176,7 +176,7 @@ navbar img {
 
         h2{
             font-size: 2em; /* Mobilon kisebb betűméret */
-            margin-top: 1.6vh; /* Mobilon kisebb margó */
+            margin-top: 3.6vh; /* Mobilon kisebb margó */
         }
         .righty{
             margin-right: 3%;
@@ -204,7 +204,7 @@ navbar img {
     position: absolute;
     width: 100%;
     height: auto;
-    top: 265vh;
+    top: 355vh;
     left: 0;
     
     margin: 0;
