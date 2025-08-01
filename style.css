@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 190vh;
+}
+
+h1{
+    padding: 1%;
+    padding-left: 3%;
+    font-size: 3.5em;
+    text-align: left;
+    z-index: 99;
+    color:#f4f4f4;
+}
+
+h3{
+    margin-left: 8%;
+    line-height: 1.6;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: normal;
+    width:12rem;
+    text-align: right;
+    margin-top: 10vh;
+}
+
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-image: url('imgs/cicero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    transition: height 0.5s ease; /* Hozzáadva az animáció */
+}
+
+.hero.shrink {
+    height: 30vh; /* Amikor görgetés történik */
+}
+
+.hero-text{
+    height: 6%;
+    position: absolute;
+    margin-top: 74vh;
+    margin-left: 2vw;
+
+}
+
+.hero-text:hover{
+    color: #f4f4f4;
+}
+
+main{
+    position: absolute;
+    margin-top: 80vh;
+}
+
+main h2{
+    font-size: 2.5em;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.lefty{
+    font-size: 1.2em;
+    margin-left: 2vw;
+    width: 50%;
+    line-height: 1.6;
+}
+
+.righty{
+    font-size: 1.2em;
+    margin-left: 2vw;
+    width: 50%;
+    line-height: 1.6;
+    
+}
+.paragraphs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    padding-right: 20px;
+}
+
+.LI h1{
+    color:black;
+    font-size: 2.5em;
+}
+.LI img {
+    width:30%;
+    height: 30%;
+    padding-top: 2vh;
+    padding-right: 20px;
+    position: relative;
+    float: right;
+    top: -40vh
+}
+.LI p {
+    text-align: justify;
+    padding-top: 2vh;
+    padding-left: 4vw;
+    padding-right: 20px;
+    font-size: 20px;
+    position: relative;
+    width: 70%;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom: -35vh;
+    left: 0;
+}
+
+footer p {
+    text-align: center;
+    color: #333;
+    font-size: 1em;
+    position: relative;
+    bottom: 5vh;
+}
+
+navbar{
+    height: 10vh;
+    width: 50vh;
+    position: relative;
+    top: 32.5vh;
+}
+
+navbar img {
+    width: 5vh;
+    height: 5vh;
+    position:relative;
+    top: 2.5vh;
+    left: 95vw;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 50vh; /* Mobilon kisebb magasság */
+    }
+    
+    .hero-text {
+        margin-top: 40vh; /* Mobilon a szöveg alacsonyabban */
+    }
+    
+    .LI img {
+        width: 100%; /* Képek teljes szélesség */
+        height: auto; /* Magasság automatikus */
+        top: -20vh; /* Képek pozíciójának módosítása */
+    }
+    
+    .LI p {
+        width: 100%; /* Szöveg teljes szélesség */
+    }
+}
