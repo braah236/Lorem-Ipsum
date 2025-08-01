@@ -9,6 +9,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     height: 190vh;
+    overflow-x: hidden;
 }
 
 h1{
@@ -151,21 +152,79 @@ navbar img {
 }
 
 @media screen and (max-width: 768px) {
+    header{
+        h1{
+           text-align: center;
+           vertical-align: middle; 
+        }
+    }
+
     .hero {
-        height: 50vh; /* Mobilon kisebb magasság */
+        height: 30vh; /* Mobilon kisebb magasság */
     }
     
     .hero-text {
-        margin-top: 40vh; /* Mobilon a szöveg alacsonyabban */
+        margin-top: 30vh; /* Mobilon a szöveg alacsonyabban */
     }
-    
+    .hero-text:hover {
+        color: #333; /* Mobilon is hover effekt */
+    }
+
+    main{
+        
+        margin-top: 45vh; /* Mobilon a fő tartalom alacsonyabban */
+
+        h2{
+            font-size: 2em; /* Mobilon kisebb betűméret */
+            margin-top: 1vh; /* Mobilon kisebb margó */
+        }
+        .righty{
+            margin-right: 3%;
+        }
+
+        .LI{
+            display: block; /* Mobilon blokkszintű elrendezés */
+            margin: 0 auto; /* Középre igazítás */
+            width: 90%;
+            position: relative;
+            top:-5vh;
+            margin-bottom: 50px; /* Mobilon szélesség */
+        }
+    }
+
     .LI img {
-        width: 100%; /* Képek teljes szélesség */
-        height: auto; /* Magasság automatikus */
-        top: -20vh; /* Képek pozíciójának módosítása */
+        display: none;
     }
     
     .LI p {
         width: 100%; /* Szöveg teljes szélesség */
     }
+
+    footer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 225vh;
+    left: 0;
+    
+    margin: 0;
+    padding: 0;
+    img{
+        height: 10vh;
+    }
+}
+navbar{
+    height: 10vh;
+    width: 50vh;
+    position: relative;
+    top: 32.5vh;
+}
+
+navbar img {
+    width: 3vh;
+    height: 3vh;
+    position:relative;
+    top: -25vh;
+    left: 90vw;
+}
 }
